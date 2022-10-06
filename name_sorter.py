@@ -22,25 +22,10 @@ with open(input_file_name, 'r') as csvfile:
     # extracting each data row one by one
     for row in csvreader:
         rows.append(row)
- 
-    # get total number of rows
-    print("Total no. of rows: %d"%(csvreader.line_num))
- 
-# printing the field names
-print('Field names are:' + ', '.join(field for field in fields))
 
 #sort by first name then last name
 rows.sort()
 rows.sort(key=take_second)
-
-print(fields)
-print(rows)
-
-for row in rows:
-    # parsing each column of a row
-    for col in row:
-        print("%10s"%col,end=" "),
-    print('\n')
 
 
 with open(output_file_name, 'w', encoding='UTF8', newline='') as csvfile:
