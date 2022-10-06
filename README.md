@@ -7,6 +7,6 @@
 1. Run the script
 2. Edit the files
     a. Edit the source file (Add / Remove name)
-    b. Edit the output file ()
+    b. Edit the output file (Just do anything to change the elements inside)
 3. Rerun the script
 4. Output file is expectedly sorted according to input changes
