@@ -1,6 +1,7 @@
 import csv
+import sys
 
-input_file_name = "random_name.csv"
+input_file_name = sys.argv[1]
 output_file_name = "sorted_name.csv"
 
 class CSVOperations:
