@@ -7,10 +7,6 @@ output_file_name = "sorted_name.csv"
 fields = []
 rows = []
 
-
-def take_second(elem):
-    return elem[1]
- 
 # reading csv file
 with open(input_file_name, 'r') as csvfile:
     # creating a csv reader object
@@ -22,6 +18,10 @@ with open(input_file_name, 'r') as csvfile:
     # extracting each data row one by one
     for row in csvreader:
         rows.append(row)
+
+#takes the second element of array
+def take_second(elem):
+    return elem[1] 
 
 #sort by first name then last name
 rows.sort()
