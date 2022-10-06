@@ -52,6 +52,10 @@ def sort_names(rows = list):
     return rows
 
 
+
+
+### Implementations of class and methods declared above ###
+
 csv_process = CSVOperations(input_file_name, output_file_name)
 csv_process.set_rows_data_from_csv()
 
